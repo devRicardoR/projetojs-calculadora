@@ -10,12 +10,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: -230px;
+    transition: all 0.2s; 
+}
+
+.calc_exibir{
+    left: 0px !important;
+    transition: all 0.2s; 
+}
+
+.calc_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #eee;
     border: 3px solid #bbb;
     width: 230px;
     border-radius: 5px;
+}
 
+.calc_aba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 50px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: rgba(126, 120, 120, 0.356);
+    cursor: pointer;
 }
 
 .div_nome{
