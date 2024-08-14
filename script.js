@@ -5,6 +5,9 @@ const display = document.querySelector(".display")
 const ton = document.getElementById("ton")
 const limpar = document.getElementById("tlimpar")
 const tigual = document.getElementById("tigual")
+const calc_aba = document.getElementById("calc_aba")
+const calc = document.getElementById("calc")
+const img_calc_aba = document.getElementById("img_calc_aba")
 
 let sinal = false;
 let decimal = false;
@@ -83,3 +86,11 @@ tigual.addEventListener("click", (evt) => {
         display.innerHTML = res
 })
 
+calc_aba.addEventListener("click", (evt) => {
+    calc.classList.toggle("calc_exibir")
+    if(calc.classList.contains("calc_exibir")){
+        img_calc_aba.setAttribute("src", "setaEsquerda.png")
+    }else{
+        img_calc_aba.setAttribute("src", "setaDireita.png")
+    }
+})
